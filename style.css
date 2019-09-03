@@ -1,0 +1,46 @@
+body{
+  margin:0;
+}
+a {
+  color:green;
+  text-decoration: none;
+}
+#active {
+  color:red;
+}
+.saw {
+  color:#7DFE74;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom:3px solid green;
+  margin:0;
+  padding:20px;
+}
+h2 {
+  font-size: 40px;
+  text-align: left;
+  padding: 20px;
+}
+#grid ol{
+  border-right:3px solid green;
+  width:100px;
+  margin:0;
+  padding:24px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+@media(max-width:900px){
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
